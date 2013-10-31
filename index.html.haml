@@ -32,7 +32,7 @@ title: Welcome
       %i.icon-heart
       Sponsor Us!    
     Sponsoring us will do wonders to your feel-good factor, your karma and most importantly, your bragging rights.
-    We're not asking for much - a million dollars or so - and we even prefer donations in small, unmarked bills.
+    We're not asking for much - a million dollars or so - and we prefer donations in small, unmarked bills.
     Want to know how to donate?  Get in touch!  Or better still, just click:
     %br
     %a.btn.btn-primary{:href => "#", :role => "button", :target => "_NEW"}
@@ -47,17 +47,28 @@ title: Welcome
     %h2 
       %i.icon-rocket
       What this is about?
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor lacus risus, nec facilisis libero semper sed. Vestibulum vel interdum augue. Ut commodo laoreet viverra. Ut vitae eleifend ante. Pellentesque ac justo consectetur Duis tempor lacus risus, nec nec facilisis libero facilisis.
+    %p
+      Every year a group of idiots decide to drive across Western Africa, from Plymouth in the UK to Banjul in the Gambia in pursuit of fortune and glory, raising money for good causes and to have some adventures along the way.  May involve lions.  The point is to attempt the drive in a car worth just a few hundred pounds/euros, and if it survives the 3700 mile (5920 km for you EuroTrash readers) journey, it is flogged to the highest bidder with proceeds going to charity.  May again involve lions.  Yay lions.
+    %p
+      Read more about the challenge 
+      %a(href="http://www.dakarchallenge.co.uk/challenge/banjul+challenge/") here.
 
     %h2
       %i.icon-group
       Meet the team!
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor lacus risus, nec facilisis libero semper sed. Vestibulum vel interdum augue. Ut commodo laoreet viverra. Ut vitae eleifend ante. Pellentesque ac justo consectetur Duis tempor lacus risus, nec nec facilisis libero facilisis.
-
+    %p
+      %ul
+      - site.people.each do |name, p|
+        %li
+          = partial("profile.html.haml", {"profile" => p, "user" => name})
     %h2
       %i.icon-question
       Why are we doing this?
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor lacus risus, nec facilisis libero semper sed. Vestibulum vel interdum augue. Ut commodo laoreet viverra. Ut vitae eleifend ante. Pellentesque ac justo consectetur Duis tempor lacus risus, nec nec facilisis libero facilisis.
+    %p
+      For the same reasons that Mallory and Irvine attempted climbing Everest, for the same reasons that Amundsen and Scott raced to the south pole, we're attempting to do this 
+      %b
+        %i because it's there!
+
 
 
   .span4.well

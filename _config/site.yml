@@ -9,6 +9,29 @@ css_minifier: disabled
 js_minifier: disabled
 html_minifier: disabled
 
+people:
+  manik:
+    first_name: Manik
+    full_name: Manik Surtani
+    twitter: http://twitter.com/maniksurtani
+    linkedin: http://www.linkedin.com/in/maniksurtani
+    pic: http://m.c.lnkd.licdn.com/mpr/pub/image-UT47FzxCG7oxJsJy336htwj-wjsOLsW12OeCUiKTwiaP9J4LUT4CbYUCw1469HqaYpHE/manik-surtani.jpg
+    profile_partial: manik.html.haml
+  rowan:
+    first_name: Rowan
+    full_name: Rowan Harvey
+    twitter: http://twitter.com/rowanharvey1
+    linkedin: http://uk.linkedin.com/pub/rowan-harvey/1b/a4b/769
+    pic: http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/2/000/117/150/20a242b.jpg
+    profile_partial: rowan.html.haml
+  ted:
+    first_name: Ted
+    full_name: Theodore Georgas
+    twitter: http://twitter.com/maniksurtani
+    linkedin: http://gr.linkedin.com/in/theodoregeorgas
+    pic: https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/1919_71239830504_271_n.jpg
+    profile_partial: ted.html.haml
+
 # Merge multiple JavaScript files to improve performance
 fileMerger:
   enabled: true
@@ -54,8 +77,6 @@ wget:
     - http://static.jboss.org/theme/js/libs/holder/1.9/holder.js
     - http://static.jboss.org/theme/fonts/titilliumtext/
     - http://static.jboss.org/theme/fonts/font-awesome/
-    - http://static.jboss.org/theme/images/common/
-    - http://static.jboss.org/images/example/
 
 # Update resource URLs based on the profile
 profiles:

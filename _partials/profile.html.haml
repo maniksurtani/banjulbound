@@ -1,0 +1,26 @@
+- profile = page["profile"]
+- user = page["user"]
+%a{"data-toggle" => "modal", :href => "#" + user, :role => "button"}
+  %i.icon-user
+  #{profile['full_name']}
+
+%div.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1", :id => user, :style => "text-align: left;"}
+  .modal-header
+  %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+  %h4#myModalLabel About #{profile['first_name']}
+  .modal-body{:style => "max-height: 500px;"}    
+    %img{:src=>profile['pic'], :height => "100px", :width => "100px", :class => "pull-left"}
+    %p
+      = partial(profile['profile_partial'])
+    %p
+      Read more about #{profile['first_name']} on
+      %a{:href=>profile['linkedin']}
+        %i.icon-linkedin
+        LinkedIn
+      or on 
+      %a{:href=>profile['twitter']}
+        %i.icon-twitter
+        Twitter
+
+    .modal-footer
+    %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
