@@ -57,10 +57,8 @@ title: Welcome
       %i.icon-group
       Meet the team!
     %p
-      %ul
       - site.people.each do |name, p|
-        %li
-          = partial("profile.html.haml", {"profile" => p, "user" => name})
+        = partial("profile.html.haml", {"profile" => p, "user" => name})
     %h2
       %i.icon-question
       Why are we doing this?
