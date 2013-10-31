@@ -59,6 +59,7 @@ title: Welcome
     %p
       - site.people.each do |name, p|
         = partial("profile.html.haml", {"profile" => p, "user" => name})
+        %br
     %h2
       %i.icon-question
       Why are we doing this?
