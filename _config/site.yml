@@ -1,5 +1,5 @@
 # Default page title
-title: Infinispan
+title: Team CRACK
 
 # Project id name
 project: infinispan
@@ -9,19 +9,6 @@ css_minifier: disabled
 js_minifier: disabled
 html_minifier: disabled
 
-asciidoctor:
-  :attributes:
-    icons: font
-    sectanchors: true
-    toclevels: 3
-    numbered: true
-    docinfo: ''
-    source-highlighter: coderay
-    backend: html5
-    doctype: book    
-    ## Leave this empty!!
-    imagesdir: ''
-    experimental: true
 # Merge multiple JavaScript files to improve performance
 fileMerger:
   enabled: true
@@ -73,18 +60,12 @@ wget:
 # Update resource URLs based on the profile
 profiles:
   development:
-    jborg_fonts_url: http://static.jboss.org/theme/fonts
-    jborg_images_url: http://static.jboss.org/theme/images
-    jborg_js_url: http://static.jboss.org/theme/js
-    project_images_url: http://static.jboss.org/images/example
-    bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
-    bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community      
-    # jborg_fonts_url: /cache/static.jboss.org/theme/fonts
-    # jborg_images_url: /cache/static.jboss.org/theme/images
-    # jborg_js_url: /cache/static.jboss.org/theme/js
-    # project_images_url: /cache/static.jboss.org/images/example
-    # bootstrap_css_url: /stylesheets/bootstrap-community
-    # bootstrap_js_url: /javascripts/bootstrap-community
+    jborg_fonts_url: /cache/static.jboss.org/theme/fonts
+    jborg_images_url: /cache/static.jboss.org/theme/images
+    jborg_js_url: /cache/static.jboss.org/theme/js
+    project_images_url: /cache/static.jboss.org/images/example
+    bootstrap_css_url: /stylesheets/bootstrap-community
+    bootstrap_js_url: /javascripts/bootstrap-community
   staging:
     jborg_fonts_url: http://static.jboss.org/theme/fonts
     jborg_images_url: http://static.jboss.org/theme/images
@@ -92,7 +73,7 @@ profiles:
     project_images_url: http://static.jboss.org/images/example
     bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
     bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community
-    base_url: http://infinispan.github.io
+    base_url: http://teamcrack-banjul.appspot.com
   production:
     minified: .min
     css_minifier: enabled
@@ -104,8 +85,8 @@ profiles:
     project_images_url: http://static.jboss.org/images/example
     bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
     bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community
-    base_url: http://infinispan.github.io
-    google_analytics: UA-8601422-1
-    deploy:
-      host: github_pages
-      branch: master
+    base_url: http://teamcrack-banjul.appspot.com
+    # google_analytics: UA-8601422-1
+    # deploy:
+    #   host: github_pages
+    #   branch: master
