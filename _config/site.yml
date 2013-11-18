@@ -1,0 +1,113 @@
+# Default page title
+title: Team CRACK
+
+# Project id name
+project: infinispan
+
+# Default minify settings
+css_minifier: disabled
+js_minifier: disabled
+html_minifier: disabled
+
+people:
+  manik:
+    first_name: Manik
+    full_name: Manik Surtani
+    twitter: http://twitter.com/maniksurtani
+    linkedin: http://www.linkedin.com/in/maniksurtani
+    pic: http://m.c.lnkd.licdn.com/mpr/pub/image-UT47FzxCG7oxJsJy336htwj-wjsOLsW12OeCUiKTwiaP9J4LUT4CbYUCw1469HqaYpHE/manik-surtani.jpg
+    profile_partial: manik.html.haml
+  rowan:
+    first_name: Rowan
+    full_name: Rowan Harvey
+    twitter: http://twitter.com/rowanharvey1
+    linkedin: http://uk.linkedin.com/pub/rowan-harvey/1b/a4b/769
+    pic: http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/2/000/117/150/20a242b.jpg
+    profile_partial: rowan.html.haml
+  ted:
+    first_name: Ted
+    full_name: Theodore Georgas
+    twitter: http://twitter.com/maniksurtani
+    linkedin: http://gr.linkedin.com/in/theodoregeorgas
+    pic: https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/1919_71239830504_271_n.jpg
+    profile_partial: ted.html.haml
+
+# Merge multiple JavaScript files to improve performance
+fileMerger:
+  enabled: true
+  outputFilePath: /javascripts/bootstrap-community.js
+  paths:
+    - /javascripts/_bootstrap-transition.js
+    - /javascripts/_bootstrap-alert.js
+    - /javascripts/_bootstrap-button.js
+    - /javascripts/_bootstrap-carousel.js
+    - /javascripts/_bootstrap-collapse.js
+    - /javascripts/_bootstrap-dropdown.js
+    - /javascripts/_bootstrap-modal.js
+    - /javascripts/_bootstrap-tooltip.js
+    - /javascripts/_bootstrap-popover.js
+    - /javascripts/_bootstrap-scrollspy.js
+    - /javascripts/_bootstrap-tab.js
+    - /javascripts/_bootstrap-typeahead.js
+    - /javascripts/_bootstrap-affix.js
+    - /javascripts/_jbossorg-navbarfix.js
+    - /javascripts/_jbossorg-misc.js
+    - /javascripts/_jquery-easytabs.js
+    - /javascripts/_crisp-scripts.js
+
+# Cache hosted fonts, images and javascript
+wget:
+  enabled: true
+  rerunEach: 86400 # seconds
+  timestampFilename: _wget-timestamp
+  options:
+    - --no-remove-listing
+    - -q
+    - -r
+    - --no-parent
+    - -N
+    - --reject 'index.html*'
+    - -e robots=off
+    - --directory-prefix=cache
+  urls:
+    - http://static.jboss.org/theme/js/libs/jquery/jquery-1.9.1.js
+    - http://static.jboss.org/theme/js/libs/jquery/jquery-1.9.1.min.js
+    - http://static.jboss.org/theme/js/libs/html5/pre3.6/html5.min.js
+    - http://static.jboss.org/theme/js/libs/prettify/188.0.0/prettify.min.js
+    - http://static.jboss.org/theme/js/libs/holder/1.9/holder.js
+    - http://static.jboss.org/theme/fonts/titilliumtext/
+    - http://static.jboss.org/theme/fonts/font-awesome/
+
+# Update resource URLs based on the profile
+profiles:
+  development:
+    jborg_fonts_url: /cache/static.jboss.org/theme/fonts
+    jborg_images_url: /cache/static.jboss.org/theme/images
+    jborg_js_url: /cache/static.jboss.org/theme/js
+    project_images_url: /cache/static.jboss.org/images/example
+    bootstrap_css_url: /stylesheets/bootstrap-community
+    bootstrap_js_url: /javascripts/bootstrap-community
+  staging:
+    jborg_fonts_url: http://static.jboss.org/theme/fonts
+    jborg_images_url: http://static.jboss.org/theme/images
+    jborg_js_url: http://static.jboss.org/theme/js
+    project_images_url: http://static.jboss.org/images/example
+    bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
+    bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community
+    base_url: http://teamcrack-banjul.appspot.com
+  production:
+    minified: .min
+    css_minifier: enabled
+    js_minifier: enabled
+    html_minifier: enabled
+    jborg_fonts_url: http://static.jboss.org/theme/fonts
+    jborg_images_url: http://static.jboss.org/theme/images
+    jborg_js_url: http://static.jboss.org/theme/js
+    project_images_url: http://static.jboss.org/images/example
+    bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
+    bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community
+    base_url: http://teamcrack-banjul.appspot.com
+    # google_analytics: UA-8601422-1
+    # deploy:
+    #   host: github_pages
+    #   branch: master

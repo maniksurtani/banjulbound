@@ -1,0 +1,8 @@
+README.md
+CONTRIBUTING.md
+LICENSE.md
+Gemfile*
+Rakefile
+bin
+infinispan_srcs
+_stg

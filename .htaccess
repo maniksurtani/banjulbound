@@ -1,0 +1,4 @@
+ErrorDocument 404 /404
+Options +FollowSymLinks
+Options +Indexes
+

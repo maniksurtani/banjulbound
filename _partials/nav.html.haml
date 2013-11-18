@@ -1,0 +1,41 @@
+.navbar.navbar-inverse#navbar-fix
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar(data-toggle="collapse" data-target=".nav-collapse")
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      .nav-collapse.collapse
+        %ul.nav
+          %li{:class=>"#{'active' if page.output_path.start_with?('/index') }" }<
+            %a(href="/") Home
+          %li{:class=>"#{'active' if page.output_path.start_with?('/about') }" }<
+            %a(href="/about") About
+          %li{:class=>"#{'active' if page.output_path.start_with?('/documentation') }" }<
+            %a(href="/documentation") Docs
+          %li.dropdown
+            %a.dropdown-toggle(href="/download" data-toggle="dropdown")<
+              = precede 'Download ' do
+                %b.caret>
+            %ul.dropdown-menu
+              %li<
+                %a(href="/download") Infinispan Releases
+              %li<
+                %a(href="/cache-store-implementations") Cache Store Implementations
+              %li<
+                %a(href="/hotrod-clients") Hot Rod Clients
+          %li{:class=>"#{'active' if page.output_path.start_with?('/community') }" }<
+            %a(href="/community") Community
+          %li{:class=>"#{'active' if page.output_path.start_with?('/getinvolved') }" }<
+            %a(href="/getinvolved") Get Involved
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown")<
+              = precede 'Follow Us ' do
+                %b.caret>
+            %ul.dropdown-menu.projectsocialmedia
+              %li<
+                %a(href="https://twitter.com/infinispan")<
+                  %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_twitter.png")
+                %a(href="http://www.facebook.com/infinispan")<
+                  %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_facebook.png")
+          %li.divider
