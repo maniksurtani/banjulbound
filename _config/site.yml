@@ -1,8 +1,8 @@
 # Default page title
-title: Team CRACK
+title: Banjul Bound
 
 # Project id name
-project: infinispan
+project: banjulbound
 
 # Default minify settings
 css_minifier: disabled
@@ -31,6 +31,14 @@ people:
     linkedin: http://gr.linkedin.com/in/theodoregeorgas
     pic: https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/1919_71239830504_271_n.jpg
     profile_partial: ted.html.haml
+  paul:
+    first_name: Paul
+    full_name: Paul Stevenson
+    twitter: http://www.belch.com/blog/wp-content/uploads/2010/09/failwhale.jpg
+    linkedin: http://www.belch.com/blog/wp-content/uploads/2010/09/failwhale.jpg
+    pic: http://images3.wikia.nocookie.net/__cb20120725230831/spongebob/images/f/f5/SpongeBob_SquarePants_Smiling_-_Artwork.png
+    profile_partial: paul.html.haml
+
 
 # Merge multiple JavaScript files to improve performance
 fileMerger:
@@ -106,8 +114,8 @@ profiles:
     project_images_url: http://static.jboss.org/images/example
     bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community
     bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.1/bootstrap-community
-    base_url: http://teamcrack-banjul.appspot.com
+    base_url: http://www.banjulbound.org
     # google_analytics: UA-8601422-1
-    # deploy:
-    #   host: github_pages
-    #   branch: master
+    deploy:
+      host: github_pages
+      branch: gh-pages
