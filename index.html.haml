@@ -30,15 +30,20 @@ title: Welcome
   .hero-unit
     %h1 
       %i.icon-heart
-      Sponsor Us!    
+      Sponsor Us!
+      %a{:href => "http://www.indiegogo.com/projects/banjulbound", :role => "button", :target => "_NEW"}
+        %img{:src => "http://www.indiegogo.com/assets/igg_logo_color_print_black_v.jpg", :height => "60px", :width => "60px", :class=>"pull-right"}
     Sponsoring us will do wonders to your feel-good factor, your karma and most importantly, your bragging rights.
     We're not asking for much - a million dollars or so - and we prefer donations in small, unmarked bills.
-    Want to know how to donate?  Get in touch!  Or better still, just click:
+    Want to know how to donate?  Easy - we're running an 
+    %b indiegogo
+    campaign!
     %br
-    %a.btn.btn-primary{:href => "#", :role => "button", :target => "_NEW"}
+    %a.btn.btn-primary{:href => "http://www.indiegogo.com/projects/banjulbound", :role => "button", :target => "_NEW", :class=>"pull-right"}
       %i.icon-money
       &nbsp;&nbsp;Donate&nbsp;&nbsp;
       %i.icon-money
+
 
 
 / section containing blog posts
@@ -58,8 +63,8 @@ title: Welcome
       Meet the team!
     %p
       - site.people.each do |name, p|
-        = partial("profile.html.haml", {"profile" => p, "user" => name})
-        %br
+        %p
+          = partial("profile.html.haml", {"profile" => p, "user" => name})        
     %h2
       %i.icon-question
       Why are we doing this?
