@@ -1,2 +1,15 @@
-%p
-  Cat herder, dog hoodie photo taker and Simpsons-game player extraordinaire, with an unfathomable infatuation with Kim Kardashian.
+%div.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1", :id => "rowan", :style => "text-align: left;"}
+  .modal-header
+  %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×&nbsp;&nbsp;
+  %h4#myModalLabel &nbsp;&nbsp;About Rowan
+  .modal-body{:style => "max-height: 500px;"}    
+    %img{:src=>"http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/2/000/117/150/20a242b.jpg", :height => "100px", :width => "100px", :class => "pull-left", :style => "margin-right: 15px;"}
+    %p
+      Rowan is a lobbyist for 
+      %a(href="http://www.actionaid.org" target="_blank")ActionAid,
+      an international charity.
+      %br
+      %br
+      %a{"href" => "http://twitter.com/rowanharvey1", "class" => "twitter-follow-button", "data-show-count" => "true", "data-lang" => "en", "data-align" => "left"}
+
+    %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal", "class" => "pull-right"} Close

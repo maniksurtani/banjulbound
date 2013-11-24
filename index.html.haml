@@ -34,10 +34,11 @@ title: Welcome
       %a{:href => "http://www.indiegogo.com/projects/banjulbound", :role => "button", :target => "_NEW"}
         %img{:src => "http://www.indiegogo.com/assets/igg_logo_color_print_black_v.jpg", :height => "60px", :width => "60px", :class=>"pull-right"}
     Sponsoring us will do wonders to your feel-good factor, your karma and most importantly, your bragging rights.
-    We're not asking for much - a million dollars or so - and we prefer donations in small, unmarked bills.
-    Want to know how to donate?  Easy - we're running an 
-    %b indiegogo
-    campaign!
+    We're not asking for much.  Our target is a miniscule 
+    %b &pound; 3,600 
+    and we prefer donations through our 
+    %b IndieGogo
+    campaign page.
     %br
     %a.btn.btn-primary{:href => "http://www.indiegogo.com/projects/banjulbound", :role => "button", :target => "_NEW", :class=>"pull-right"}
       %i.icon-money
@@ -48,30 +49,39 @@ title: Welcome
 
 / section containing blog posts
 .row-fluid.posts
-  .span4.well
+  .span8.well
     %h2 
       %i.icon-rocket
       What this is about?
     %p
-      Every year a group of idiots decide to drive across Western Africa, from Plymouth in the UK to Banjul in the Gambia in pursuit of fortune and glory, raising money for good causes and to have some adventures along the way.  May involve lions.  The point is to attempt the drive in a car worth just a few hundred pounds/euros, and if it survives the 3700 mile (5920 km for you EuroTrash readers) journey, it is flogged to the highest bidder with proceeds going to charity.  May again involve lions.  Yay lions.
+      Every year a group of idiots decide to drive across Western Africa, from Plymouth in the UK to Banjul in the Gambia in pursuit of fortune and glory, raising money for good causes and to have some adventures along the way.  May involve lions.  The point is to attempt the drive in a car worth just a few hundred pounds/euros, and if it survives the 3,700 mile (5,920 km) journey, it is flogged to the highest bidder with proceeds going to charity.  May again involve lions.  Yay lions.
     %p
       Read more about the challenge 
       %a(href="http://www.dakarchallenge.co.uk/challenge/banjul+challenge/") here.
-
+    %br
     %h2
       %i.icon-group
       Meet the team!
     %p
       - site.people.each do |name, p|
         %p
-          = partial("profile.html.haml", {"profile" => p, "user" => name})        
+          %a{"data-toggle" => "modal", :href => "#" + name, :role => "button"}
+            %i.icon-user
+            #{p['full_name']}
+
+        = partial(p["profile_partial"])
+    %br
     %h2
-      %i.icon-question
+      %i.icon-trophy
       Why are we doing this?
     %p
       For the same reasons that Mallory and Irvine attempted climbing Everest, for the same reasons that Amundsen and Scott raced to the south pole, we're attempting to do this 
       %b
         %i because it's there!
+    %p
+      Okay, more realistically, it's to raise money for 
+      %a(href="http://www.actionaid.org" target="_blank") ActionAid,
+      our chosen charity.
 
 
 
@@ -79,6 +89,11 @@ title: Welcome
     %h2
       %i.icon-map-marker
       Our route
-    %iframe{:width=>"281", :height=>"485", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"http://maps.google.com/maps/ms?ie=UTF8&amp;t=h&amp;msa=0&amp;msid=101230591946158674259.000482153d1f1e74501c0&amp;ll=35.603719,-3.691406&amp;spn=66.98357,49.21875&amp;z=3&amp;output=embed"}
-
+    %iframe{:width=>"281", :height=>"488", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"http://maps.google.com/maps/ms?ie=UTF8&amp;t=h&amp;msa=0&amp;msid=101230591946158674259.000482153d1f1e74501c0&amp;ll=35.603719,-3.691406&amp;spn=66.98357,49.21875&amp;z=3&amp;output=embed"}
+  
+%br
+.row-fluid.posts
+  = partial( 'blog.html.haml' )
+  = partial( 'facebook.html.haml' )
   = partial( 'tweets.html.haml' )
+
