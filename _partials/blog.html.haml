@@ -34,8 +34,8 @@
               ).append(
                 $('<small/>').text(date_string)
               ).append(
-                $('<p/>').text(entry.contentSnippet.replace("&#8217;", "'")).append(
-                  ' <a href="' + entry.link + '">more</a>'
+                $('<p/>').text(entry.contentSnippet.replace("&#8217;", "'").replace("&#8211;", "-")).append(
+                  ' <a href="' + entry.link + '" target="_blank">more</a>'
                 )
               ).append(
                 '<hr/>'

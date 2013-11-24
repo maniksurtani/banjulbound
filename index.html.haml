@@ -50,40 +50,59 @@ title: Welcome
 / section containing blog posts
 .row-fluid.posts
   .span8.well
-    %h2 
-      %i.icon-rocket
-      What this is about?
-    %p
-      Every year a group of idiots decide to drive across Western Africa, from Plymouth in the UK to Banjul in the Gambia in pursuit of fortune and glory, raising money for good causes and to have some adventures along the way.  May involve lions.  The point is to attempt the drive in a car worth just a few hundred pounds/euros, and if it survives the 3,700 mile (5,920 km) journey, it is flogged to the highest bidder with proceeds going to charity.  May again involve lions.  Yay lions.
-    %p
-      Read more about the challenge 
-      %a(href="http://www.dakarchallenge.co.uk/challenge/banjul+challenge/") here.
-    %br
-    %h2
-      %i.icon-group
-      Meet the team!
-    %p
-      - site.people.each do |name, p|
+    .row-fluid
+      .span7
+        %h2 
+          %i.icon-rocket    
+          What this is about?
+        %p      
+          Every year, resourceful and highly spirited adventure-loving kooks all over the world come together
+          and form groups that will go on an epic voyage across Europe and West
+          Africa. In a car worth just a few hundred pounds/euros they will drive
+          from Plymouth, England to Banjul, the Gambia in pursuit of adventure, fortune, glory, 
+          raising money for good causes and perhaps have a some fun
+          encounters along the way that may involve lions. If (and that is a
+          big IF) they manage to get across Europe and  through the rugged
+          terrain of Africa without being eaten by lions, what is left of the
+          car (after it survives the 3,700 mile/5,920 km journey) is flogged to
+          the highest bidder in an auction in Banjul, with proceeds going to charity.
         %p
-          %a{"data-toggle" => "modal", :href => "#" + name, :role => "button"}
-            %i.icon-user
-            #{p['full_name']}
+          Read more about the challenge 
+          %a(href="http://www.dakarchallenge.co.uk/challenge/banjul+challenge/") here.
+        %p
+          %iframe(width="730" height="315" src="//www.youtube.com/embed/ZR7Nl0snkOk" frameborder="0" allowfullscreen="true")
 
-        = partial(p["profile_partial"])
+      .span5
+        %a(name = "team")
+        %h2
+          %i.icon-group
+          Meet the team!
+        %p          
+          - site.people.each do |name, p|
+            %p
+              %a{"data-toggle" => "modal", :href => "#" + name, :role => "button"}
+                %i.icon-user
+                #{p['full_name']}
+
+            = partial(p["profile_partial"])
+      
+        
     %br
     %h2
       %i.icon-trophy
       Why are we doing this?
     %p
-      For the same reasons that Mallory and Irvine attempted climbing Everest, for the same reasons that Amundsen and Scott raced to the south pole, we're attempting to do this 
-      %b
-        %i because it's there!
+      Why did Mallory and Irvine attempt to climb Everest? Why did Amundsen
+      and Scott race to the south pole? Why did Justin Esch and Dave Lefkow
+      go beyond bacon-salt to invent 
+      %a(href="http://en.wikipedia.org/wiki/Baconnaise" target="_blank")Baconnaise?
+      Because it was a damn cool thing to do and the result was awesome!
     %p
-      Okay, more realistically, it's to raise money for 
+      Okay, more realistically, it's to raise money for
       %a(href="http://www.actionaid.org" target="_blank") ActionAid,
-      our chosen charity.
-
-
+      our chosen charity. ActionAid focuses on the people that others forget.
+      People in poverty. People who face discrimination. People whose voices
+      are ignored.
 
   .span4.well
     %h2
