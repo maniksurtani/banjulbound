@@ -19,10 +19,6 @@ people:
   ted:
     full_name: Theodore Georgas
     profile_partial: ted.html.haml
-  paul:
-    full_name: Paul Stevenson
-    profile_partial: paul.html.haml
-
 
 # Merge multiple JavaScript files to improve performance
 fileMerger:
