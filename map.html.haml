@@ -1,0 +1,27 @@
+---
+layout: project
+title: Map Test
+---
+
+.row-fluid
+  .hero-unit
+    %h1 
+      Test page for geo-tagged tweets
+    %p
+      This test page will render a Google Map with real-time tweets from Twitter user 
+      %a(href="https://twitter.com/RCKILDUFF" target="_blank")@RCKILDUFF.
+      Why did I pick this guy?  Because he is oen of the few random users I've found who 
+      actually geotags his tweets.  He probably doesn't intend to, but who cares.
+      He seems like an idiot anyway, judging by the content of his tweets.
+    %p
+      Needless to say, when we're ready to roll, I'll replace this with our Twitter handle
+      and move the map to the front page.    
+    %p
+      Things to try:
+      %ul
+        %li Scrolling around the map
+        %li Zooming on the map
+        %li Hover over one of the tweets
+        %li Click on one of the tweets
+    %iframe(src = "http://banjultweets.appspot.com/" style="width: 100%; height: 600px;")
+

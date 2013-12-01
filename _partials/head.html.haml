@@ -29,7 +29,8 @@
     .banner { width: 200px; margin: 0px auto; }
   }
 
-%script(src="#{site.jborg_js_url}/libs/jquery/jquery-1.9.1#{site.minified}.js")
+%script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+
 - if page.javascripts
   - page.javascripts.each do |javascript|
     %script{:src=>javascript, :type=>'text/javascript'}
