@@ -7,7 +7,7 @@
 	<key>ApplicationVersion</key>
 	<array>
 		<string>com.omnigroup.OmniGrafflePro</string>
-		<string>139.7.0.167456</string>
+		<string>139.18.0.187838</string>
 	</array>
 	<key>AutoAdjust</key>
 	<false/>
@@ -62,15 +62,13 @@
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{992.03405789971316, -3.3060271288619774}, {176.3201904296875, 90.022232055664062}}</string>
+			<string>{{939, 1}, {224, 96}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>8</integer>
+			<integer>10</integer>
 			<key>ImageID</key>
-			<integer>2</integer>
-			<key>Rotation</key>
-			<real>15</real>
+			<integer>6</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
@@ -147,21 +145,20 @@
 				BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0
 				ZWRTdHJpbmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJp
 				bmcBlIQBKwxCYW5qdWwgQm91bmSGhAJpSQEMkoSEhAxO
-				U0RpY3Rpb25hcnkAlIQBaQSShJaWDk5TT3JpZ2luYWxG
-				b250hpKEhIQGTlNGb250HpSZLIQFWzQ0Y10GAAAAJAAA
-				AP/+TABpAHQAaABvAHMAUAByAG8ALQBSAGUAZwB1AGwA
-				YQByAIQBZl6EAWMAnQGdAJ0AhpKElpYQTlNQYXJhZ3Jh
-				cGhTdHlsZYaShISEEE5TUGFyYWdyYXBoU3R5bGUAlIQE
-				Q0NAUwAAhISEB05TQXJyYXkAlJkMkoSEhAlOU1RleHRU
-				YWIAlIQCQ2YAHIaShKKiADiGkoSiogBUhpKEoqIAcIaS
-				hKKiAIGMAIaShKKiAIGoAIaShKKiAIHEAIaShKKiAIHg
-				AIaShKKiAIH8AIaShKKiAIEYAYaShKKiAIE0AYaShKKi
-				AIFQAYaGgQAIhARbMWZdg83MTD2GkoSWlgZOU0ZvbnSG
-				kpqShJaWB05TQ29sb3KGkoSEhAdOU0NvbG9yAJSdAoQE
-				ZmZmZoOtrCw/g9rYWD6DkZAQPgGGhoY=
+				U0RpY3Rpb25hcnkAlIQBaQOShJaWB05TQ29sb3KGkoSE
+				hAdOU0NvbG9yAJSEAWMChARmZmZmg62sLD+D2thYPoOR
+				kBA+AYaShJaWEE5TUGFyYWdyYXBoU3R5bGWGkoSEhBBO
+				U1BhcmFncmFwaFN0eWxlAJSEBENDQFMAAISEhAdOU0Fy
+				cmF5AJSZDJKEhIQJTlNUZXh0VGFiAJSEAkNmAByGkoSi
+				oQA4hpKEoqEAVIaShKKhAHCGkoSioQCBjACGkoSioQCB
+				qACGkoSioQCBxACGkoSioQCB4ACGkoSioQCB/ACGkoSi
+				oQCBGAGGkoSioQCBNAGGkoSioQCBUAGGhgCGkoSWlgZO
+				U0ZvbnSGkoSEhAZOU0ZvbnQelJkshAVbNDRjXQYAAAAk
+				AAAA//5MAGkAdABoAG8AcwBQAHIAbwAtAFIAZQBnAHUA
+				bABhAHIAhAFmXpsAmwGbAJsAhoaG
 				</data>
 				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
 \cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 LithosPro-Regular;}
 {\colortbl;\red255\green255\blue255;\red154\green36\blue28;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
@@ -188,14 +185,14 @@
 	<key>HPages</key>
 	<integer>3</integer>
 	<key>ImageCounter</key>
-	<integer>6</integer>
+	<integer>7</integer>
 	<key>ImageLinkBack</key>
 	<array>
 		<dict/>
 	</array>
 	<key>ImageList</key>
 	<array>
-		<string>image2.tiff</string>
+		<string>image6.gif</string>
 	</array>
 	<key>KeepToScale</key>
 	<false/>
@@ -234,7 +231,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-11-24 06:59:09 +0000</string>
+	<string>2013-12-13 08:02:24 +0000</string>
 	<key>Modifier</key>
 	<string>Manik Surtani</string>
 	<key>NotesVisible</key>
@@ -332,7 +329,7 @@
 		<key>SidebarWidth</key>
 		<integer>116</integer>
 		<key>VisibleRegion</key>
-		<string>{{-509, -651}, {2198, 1390}}</string>
+		<string>{{-509, -639}, {2198, 1390}}</string>
 		<key>Zoom</key>
 		<real>0.5</real>
 		<key>ZoomValues</key>
