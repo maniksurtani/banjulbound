@@ -17,8 +17,8 @@ people:
     full_name: Rowan Harvey
     profile_partial: rowan.html.haml
   ted:
-    full_name: Theodore Georgas
-    profile_partial: ted.html.haml
+    full_name: Richard Ely
+    profile_partial: richard.html.haml
 
 # Merge multiple JavaScript files to improve performance
 fileMerger:
