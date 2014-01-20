@@ -2,6 +2,14 @@
 layout: project
 title: Welcome
 ---
+
+%script(type="text/javascript")
+:javascript
+  $(function () {
+    var austDay = new Date(2014, 1-1, 26, 7, 0, 0);    
+    $('.countdown').countdown({until: austDay, layout: '{dn} {dl}, {hn} {hl}, {mn} {ml} and {sn} {sl} until we set off on our journey!'});
+  });
+
 %p{:style => "top-margin: 10px;"}
 / Main hero unit for a primary marketing message or call to action
 .row-fluid
@@ -28,10 +36,7 @@ title: Welcome
 
 .row-fluid
   .hero-unit
-    %p
-      %span{"style" => "text-align: right; font-size: 2em; font-weight: bold; color: black;"} Countdown:
-      %span{"style" => "text-align: right; font-size: 3em; font-weight: bold; color: #CC0000;"} 9 days
-      %span{"style" => "text-align: right; font-size: 2em; font-weight: bold; color: black;"}  to go!
+    %p.countdown(style = "font-size: 110%; color: #CC0000;")
 
 .row-fluid
   .hero-unit
