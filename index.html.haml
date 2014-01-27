@@ -3,50 +3,22 @@ layout: project
 title: Welcome
 ---
 
-%script(type="text/javascript")
-:javascript
-  $(function () {
-    var austDay = new Date(2014, 1-1, 26, 7, 0, 0);    
-    $('.countdown').countdown({until: austDay, layout: '{dn} {dl}, {hn} {hl}, {mn} {ml} and {sn} {sl} until we set off on our journey!'});
-  });
-
 %p{:style => "top-margin: 10px;"}
-/ Main hero unit for a primary marketing message or call to action
-.row-fluid
-  / Main hero unit for a primary marketing message or call to action
-  #myCarousel.carousel.slide{:style => "max-height: 460px;"}
-    %ol.carousel-indicators
-      %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-      %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-      %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-      %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
-    / Carousel items
-    .carousel-inner
-      .active.item
-        %img(src="images/carousel_img1.png" style="margin-left: auto; margin-right: auto;")
-      .item
-        %img(src="images/carousel_img2.png" style="margin-left: auto; margin-right: auto;")
-      .item
-        %img(src="images/carousel_img3.png" style="margin-left: auto; margin-right: auto;")
-      .item
-        %img(src="images/carousel_img4.png" style="margin-left: auto; margin-right: auto;")
-    / Carousel nav
-    %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
-    %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
-
-.row-fluid
-  .hero-unit
-    %p.countdown(style = "font-size: 110%; color: #CC0000;")
-
 .row-fluid
   .hero-unit
     %p{:class => "sponsortext"} In January 2014 three intrepid souls will pit themselves (and a crappy car) against the worst the western Sahara has to offer in the name of charity.  And they need your help.
-    %h1 
+    %iframe(src = "https://share.delorme.com/BanjulBound" style="width: 100%; height: 600px;")
+
+    %h2 
       %i.icon-heart
-      Sponsor Us!
+      Thank you
       %a{:href => "http://www.indiegogo.com/projects/banjul-bound-phase-ii", :role => "button", :target => "_NEW"}
         %img{:src => "http://www.indiegogo.com/assets/igg_logo_color_print_black_v.jpg", :height => "60px", :width => "60px", :class=>"pull-right"}
     %p{:class => "sponsortext"}
+      to everyone who has sponsored us so far.  
+
+    %h2 You can still sponsor us!
+    %p
       Sponsoring us will do wonders to your feel-good factor, your karma and most importantly, your bragging rights.
       The more we can raise for 
       %a{:href=>"http://www.actionaid.org/", :target=>"_blank"}ActionAid,
@@ -59,6 +31,19 @@ title: Welcome
       &nbsp;&nbsp;Donate&nbsp;&nbsp;
       %i.icon-money
 
+%br
+.row-fluid.posts
+  = partial( 'facebook.html.haml' )
+  = partial( 'tweets.html.haml' )
+  .span4.well
+    %h2
+      %i.icon-map-marker
+      Our route
+    Once we get started expect to see a dynamically updating map of where we are, thanks
+    to geotagged tweets and Google Maps.  For now though, this is, approximately,
+    what our intended route will be.    
+    %iframe{:frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"http://maps.google.com/maps/ms?ie=UTF8&amp;t=h&amp;msa=0&amp;msid=101230591946158674259.000482153d1f1e74501c0&amp;ll=35.603719,-3.691406&amp;spn=66.98357,49.21875&amp;z=3&amp;output=embed", :class => "map"}
+  
 
 
 / section containing blog posts
@@ -129,18 +114,5 @@ title: Welcome
       We are dedicating our journey to the amazing work they do, and will be 
       visiting their operations in west Africa en-route.
 
-  .span4.well
-    %h2
-      %i.icon-map-marker
-      Our route
-    Once we get started expect to see a dynamically updating map of where we are, thanks
-    to geotagged tweets and Google Maps.  For now though, this is, approximately,
-    what our intended route will be.    
-    %iframe{:frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"http://maps.google.com/maps/ms?ie=UTF8&amp;t=h&amp;msa=0&amp;msid=101230591946158674259.000482153d1f1e74501c0&amp;ll=35.603719,-3.691406&amp;spn=66.98357,49.21875&amp;z=3&amp;output=embed", :class => "map"}
-  
-%br
-.row-fluid.posts
   = partial( 'blog.html.haml' )
-  = partial( 'facebook.html.haml' )
-  = partial( 'tweets.html.haml' )
 
