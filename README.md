@@ -2,7 +2,7 @@
 Source code behind the website for team BanjulBound, taking part in the Banjul Challenge for 2014.
 
 ## The Website
-Visit us on http://www.banjulbound.com  - more information about the team, the challenge and how YOU can participate are all up there!
+Visit us on http://www.banjulbound.org  - more information about the team, the challenge and how YOU can participate are all up there!
 
 ## License
 The souce code in this repository is released under Creative Commons.  More details of this license can be found on the
